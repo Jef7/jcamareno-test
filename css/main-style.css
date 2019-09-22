@@ -185,7 +185,8 @@ body {
 }
 
 .gradient-yellow-color{
-  background-image: linear-gradient(#F2DA56, #F6BC25);
+  background-color: #F6BC25;
+  /* background-image: linear-gradient(#F2DA56, #F6BC25); */
   box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
   border-radius: 6px;
   border-radius: 6px;
@@ -391,6 +392,10 @@ ul{
   /* padding-bottom: 1%; */
 }
 
+.go-button:hover {
+  background-color: #F2DA56;
+  color: #004A80;
+}
 
 @media screen and (max-width:1200px){
   .box{
