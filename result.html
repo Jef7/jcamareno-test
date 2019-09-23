@@ -32,7 +32,8 @@
         </div>
         <!-- BODY CONTAINER -->
         <div class="body-container">
-            <div class="content-center">
+            <!-- body-result page -->
+            <div id="body-result" class="content-center">
                 <h1 class="text-blue-color title-text">Result</h1>
                 <div class="align-center-content">
                     <p id="text-description">
@@ -48,8 +49,8 @@
                             <img src="assets/SVGs/icn_person.svg" alt="PersonLogo" class="person-Logo-info">
                         </div>
                         <div class="width-75">
-                            <h2 class="text-blue-color without-margin">John Smith, 35</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h2 class="text-blue-color without-margin" id="Name"><a id="Age"></a></h2>
+                            <p id="Notes"></p>
                         </div>
                     </div>
                     <!-- OTHER PERSONAL INFO -->
@@ -58,15 +59,13 @@
                             <!-- ADDRESS -->
                             <div class="">
                                 <h3 class="sub-title-h3">Address</h3>
-                                <p id="Address">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
+                                <p id="Address"></p>
                             </div>
                             <!-- EMAIL -->
                             <div class="">
                                 <h3 class="sub-title-h3">Email</h3>
                                 <ul>
-                                    <li id="Email">loremipsum@dolorsit.com</li>
+                                    <li id="Email"></li>
                                 </ul>
                             </div>
                         </div>
@@ -75,25 +74,23 @@
                             <div class="">
                                 <h3 class="sub-title-h3">Phone Numbers</h3>
                                 <ul>
-                                    <li id="Phones">(555) 555-5555</li>
-                                    <li id="Phones">(555) 555-5555</li>
-                                    <li id="Phones">(555) 555-5555</li>
+                                    <li id="Phones"></li>
                                 </ul>
                             </div>
                             <!-- RELATIVES -->
                             <div class="">
                                 <h3 class="sub-title-h3">Relatives</h3>
                                 <ul>
-                                    <li id="Relatives">Jane Smith</li>
-                                    <li id="Relatives">John Smith Jr</li>
+                                    <li id="Relatives"></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- TRY AGAIN FORM -->
-            <div class="try-again">
+            </div> <!-- body-result page -->
+
+            <!-- BODY TRY AGAIN FORM -->
+            <div id="body-try-again" class="try-again">
                 <div class="content-center">
                     <h1 class="text-white-color title-text">Can’t Find The Right Person?</h1>
                     <div id="sub-title">
@@ -103,17 +100,27 @@
                     </div>
                     <!-- FORM CONTAINER -->
                     <div class="">
-                        <form class="content-center width-total container-form">
-                            <input type="email" name="emial" placeholder="EMAIL" class="box-input">
-                            <input class="gradient-yellow-color box-submit go-button" type="submit" value="GO!">
-                        </form>
+                        <!-- EMAIL ERRORS -->
+                        <div class="popup" onclick="myFunction()">
+                          <!-- EMAIL INPUT ERROR: DATA NOT FOUND -->
+                          <span class="popuptext" id="popup-not-found">Email not found, please try again.</span>
+                          <!-- EMAIL INPUT ERROR: INVALID EMAIL-->
+                          <span class="popuptext" id="popup-invalid-email">Please add a valid email address.</span>
+                        </div>
+                        <div class="container-input">
+                          <!-- EMAIL INPUT -->
+                          <input type="email" name="emial" id="email" placeholder="EMAIL" class="box-input">
+                          <!-- GO button -->
+                          <button class="gradient-yellow-color box-submit go-button" onclick="renderInfo()">GO!</button>
+                        </div>
                         <div class="align-left-content">
                             <img src="assets/SVGs/lock.svg" alt="LockLogo" class="lock-Logo">
                             <a class="text-yellow-color bold-text">Enter Any Email Address. They won't be notified.</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- BODY TRY AGAIN FORM -->
+
         </div>
     </div>
     <!-- FOOTER -->

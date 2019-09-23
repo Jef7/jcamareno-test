@@ -239,6 +239,16 @@ body {
   flex-grow: 1;
 }
 
+.container-input{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
 .container-form{
   width: 100%;
   height: auto;
@@ -395,6 +405,116 @@ ul{
 .go-button:hover {
   background-color: #F2DA56;
   color: #004A80;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 20em;
+  background-color: #F6BC25;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: -2em;
+  margin-left: 1em;
+
+  /* bottom: 125%; */
+  /* left: 50%; */
+  /* margin-left: -80px; */
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  /* left: 50%; */
+  /* margin-left: -5px; */
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+#header-index{
+  display: block;
+}
+
+#body-index{
+  display: block;
+}
+
+#body-result{
+  display: none;
+}
+
+#body-try-again{
+  display: none;
+}
+
+#person-info-logo{
+  margin-top: 4%;
+}
+
+#Phones{
+  margin-left: -10%;
+}
+
+#Email{
+  margin-left: -1%;
+}
+
+#Relatives{
+  margin-left: -10%;
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#invalidEmail{
+  width: 97%;
+	font-size: 16px;
+	color: #DC0015;
+	letter-spacing: 0;
+	line-height: 18px;
+	visibility: hidden;
+	background-color: white;
+	/* padding: 1%; */
+}
+
+.testing{
+  background-color: blue;
+  width: 200px;
+  height: 50px;
 }
 
 @media screen and (max-width:1200px){
