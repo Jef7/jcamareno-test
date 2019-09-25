@@ -1,260 +1,256 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Search Any Email Address</title>
-    <link rel="stylesheet" type="text/css" href="css/main-style.css">
-    <script src="js/main-script-index.js"></script>
-    <script src="js/result-script.js"></script>
-
-</head>
-
-<body>
-    <!-- GENERAL PAGE CONTAINER -->
-    <div class="page-container">
-        <!-- HEADER CONTAINER -->
-        <div class="header-container padding-top-bottom">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Search Any Email Address</title>
+      <link rel="stylesheet" type="text/css" href="css/main-style.css">
+      <script src="js/main-script-index.js"></script>
+      <script src="js/result-script.js"></script>
+   </head>
+   <body>
+      <!-- GENERAL PAGE CONTAINER -->
+      <div class="page-container">
+         <!-- HEADER CONTAINER -->
+         <div class="header-container padding-top-bottom">
             <div class="content-center">
-                <!-- LOGOS CONTAINER -->
-                <div class="together align-right-content" id="move-down">
-                    <div class="company-Logo" id="align-left-logo">
-                        <img src="assets/SVGs/Logo.svg" alt="CompanyLogo">
-                    </div>
-                    <div class="together">
-                        <div>
-                            <img src="assets/SVGs/icn_search.svg" alt="SearchLogo" class="search-Logo">
-                        </div>
-                        <div class="">
-                            <img src="assets/SVGs/icn_person.svg" alt="PersonLogo" class="person-Logo">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- header index page -->
-                <div id="header-index">
-                    <h1 class="text-white-color title-text">Search Any Email Address</h1>
-
-                    <div id="sub-title">
-                        <p class="text-white-color">
-                            <a class="text-yellow-color bold-text">Start Here</a> - Look up the owner's name, photos and online profiles. See what you find!
-                        </p>
-                    </div>
-                    <!-- FORM CONTAINER -->
-                    <div class="">
-                        <!-- EMAIL ERRORS -->
-                        <div class="popup" onclick="myFunction()">
-                            <!-- EMAIL INPUT ERROR: DATA NOT FOUND -->
-                            <span class="popuptext" id="popup-not-found-index">Email not found, please try again.</span>
-                            <!-- EMAIL INPUT ERROR: INVALID EMAIL-->
-                            <span class="popuptext" id="popup-invalid-email-index">Please add a valid email address.</span>
-                        </div>
-                        <div class="container-input">
-                            <!-- EMAIL INPUT -->
-                            <input type="email" name="emial-index" id="email-index" placeholder="EMAIL" class="box-input">
-                            <!-- GO button -->
-                            <button class="gradient-yellow-color box-submit go-button" onclick="renderInfoIndex()">GO!</button>
-                        </div>
-                        <div class="align-left-content">
-                            <img src="assets/SVGs/lock.svg" alt="LockLogo" class="lock-Logo">
-                            <a class="text-yellow-color bold-text">Enter Any Email Address. They won't be notified.</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- header index page -->
+               <!-- LOGOS CONTAINER -->
+               <div class="together align-right-content" id="move-down">
+                  <div class="company-Logo" id="align-left-logo">
+                     <a href="index.html">
+                     <img src="assets/SVGs/Logo.svg" alt="CompanyLogo">
+                     </a>
+                  </div>
+                  <div class="together">
+                     <div>
+                        <a href="index.html">
+                        <img src="assets/SVGs/icn_search.svg" alt="SearchLogo" class="search-Logo">
+                        </a>
+                     </div>
+                     <div class="">
+                        <a href="index.html">
+                        <img src="assets/SVGs/icn_person.svg" alt="PersonLogo" class="person-Logo">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- header index page -->
+               <div id="header-index">
+                  <h1 class="text-white-color title-text">Search Any Email Address</h1>
+                  <div id="sub-title">
+                     <p class="text-white-color">
+                        <a class="text-yellow-color bold-text">Start Here</a> - Look up the owner's name, photos and online profiles. See what you find!
+                     </p>
+                  </div>
+                  <!-- FORM CONTAINER -->
+                  <div class="">
+                     <!-- EMAIL ERRORS -->
+                     <div class="popup">
+                        <!-- EMAIL INPUT ERROR: DATA NOT FOUND -->
+                        <span class="popuptext" id="popup-not-found-index">Email not found, please try again.</span>
+                        <!-- EMAIL INPUT ERROR: INVALID EMAIL-->
+                        <span class="popuptext" id="popup-invalid-email-index">Please add a valid email address.</span>
+                     </div>
+                     <div class="container-input">
+                        <!-- EMAIL INPUT -->
+                        <input type="email" name="emial-index" id="email-index" placeholder="EMAIL" class="box-input">
+                        <!-- GO button -->
+                        <button class="gradient-yellow-color box-submit go-button" onclick="renderInfoIndex()">GO!</button>
+                     </div>
+                     <div class="align-left-content">
+                        <img src="assets/SVGs/lock.svg" alt="LockLogo" class="lock-Logo">
+                        <a class="text-yellow-color bold-text">Enter Any Email Address. They won't be notified.</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- header index page -->
             </div>
-        </div>
-
-        <!-- BODY CONTAINER -->
-        <div class="body-and-footer container-body-and-footer">
+         </div>
+         <!-- BODY CONTAINER -->
+         <div class="body-and-footer container-body-and-footer">
             <!-- body-index page -->
             <div id="body-index" class="body-container box-body-footer">
-                <div class="content-center container-index">
-                    <h1 class="text-blue-color title-text">Reverse Email Lookup</h1>
-                    <div class="align-center-content">
-                        <p id="text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <!-- 1-6 CONTAINER -->
-                    <div class="together container">
-                        <!-- COLUNM 1 -->
-                        <div class="box">
-                            <!-- ELEMENT 1 -->
-                            <div class="together">
-                                <div class="circle solid-blue-color  text-yellow-color">
-                                    <a class="inside-circle-text">1</a>
-                                </div>
-                                <div class="width-75">
-                                    <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <!-- ELEMENT 2 -->
-                            <div class="together">
-                                <div class="circle solid-blue-color  text-yellow-color">
-                                    <a class="inside-circle-text">2</a>
-                                </div>
-                                <div class="width-75">
-                                    <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <!-- ELEMENT 3 -->
-                            <div class="together">
-                                <div class="circle solid-blue-color  text-yellow-color">
-                                    <a class="inside-circle-text">3</a>
-                                </div>
-                                <div class="width-75">
-                                    <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
+               <div class="content-center container-index">
+                  <h1 class="text-blue-color title-text">Reverse Email Lookup</h1>
+                  <div class="align-center-content">
+                     <p id="text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <!-- 1-6 CONTAINER -->
+                  <div class="together container">
+                     <!-- COLUNM 1 -->
+                     <div class="box">
+                        <!-- ELEMENT 1 -->
+                        <div class="together">
+                           <div class="circle solid-blue-color  text-yellow-color">
+                              <a class="inside-circle-text">1</a>
+                           </div>
+                           <div class="width-75">
+                              <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
                         </div>
-                        <!-- COLUNM 2 -->
-                        <div class="box">
-                            <!-- ELEMENT 4 -->
-                            <div class="together">
-                                <div class="circle solid-blue-color  text-yellow-color">
-                                    <a class="inside-circle-text">4</a>
-                                </div>
-                                <div class="width-75">
-                                    <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <!-- ELEMENT 5 -->
-                            <div class="together">
-                                <div class="circle solid-blue-color  text-yellow-color">
-                                    <a class="inside-circle-text">5</a>
-                                </div>
-                                <div class="width-75">
-                                    <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-                            <!-- ELEMENT 6 -->
-                            <div class="together">
-                                <div class="circle solid-blue-color  text-yellow-color">
-                                    <a class="inside-circle-text">6</a>
-                                </div>
-                                <div class="width-75">
-                                    <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
+                        <!-- ELEMENT 2 -->
+                        <div class="together">
+                           <div class="circle solid-blue-color  text-yellow-color">
+                              <a class="inside-circle-text">2</a>
+                           </div>
+                           <div class="width-75">
+                              <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                        <!-- ELEMENT 3 -->
+                        <div class="together">
+                           <div class="circle solid-blue-color  text-yellow-color">
+                              <a class="inside-circle-text">3</a>
+                           </div>
+                           <div class="width-75">
+                              <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- COLUNM 2 -->
+                     <div class="box">
+                        <!-- ELEMENT 4 -->
+                        <div class="together">
+                           <div class="circle solid-blue-color  text-yellow-color">
+                              <a class="inside-circle-text">4</a>
+                           </div>
+                           <div class="width-75">
+                              <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </div>
+                        <!-- ELEMENT 5 -->
+                        <div class="together">
+                           <div class="circle solid-blue-color  text-yellow-color">
+                              <a class="inside-circle-text">5</a>
+                           </div>
+                           <div class="width-75">
+                              <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </div>
+                        <!-- ELEMENT 6 -->
+                        <div class="together">
+                           <div class="circle solid-blue-color  text-yellow-color">
+                              <a class="inside-circle-text">6</a>
+                           </div>
+                           <div class="width-75">
+                              <h2 class="text-blue-color without-margin">Lorem Ipsum</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- body-index page -->
-
+         </div>
+         <!-- body-index page -->
+         <section id="result-page">
             <!-- ***************************************BODY RESULT PAGE***************************************************** -->
-
             <!-- body-result page -->
             <div id="body-result" class="content-center">
-                <h1 class="text-blue-color title-text">Result</h1>
-                <div class="align-center-content">
-                    <p id="text-description">
-                        Look at the result below to see the details of the person you’re searched for.
-                    </p>
-                </div>
-
-                <!-- CONTAINER PERSONAL INFORMATION -->
-                <div class="container-info">
-                    <!-- NAME INFO -->
-                    <div class="together name-info">
-                        <div id="person-info-logo" class="circle solid-blue-color  text-yellow-color">
-                            <img src="assets/SVGs/icn_person.svg" alt="PersonLogo" class="person-Logo-info">
+               <h1 class="text-blue-color title-text">Result</h1>
+               <div class="align-center-content">
+                  <p id="text-description">
+                     Look at the result below to see the details of the person you’re searched for.
+                  </p>
+               </div>
+               <!-- CONTAINER PERSONAL INFORMATION -->
+               <div class="container-info">
+                  <!-- NAME INFO -->
+                  <div class="together name-info">
+                     <div id="person-info-logo" class="circle solid-blue-color  text-yellow-color">
+                        <img src="assets/SVGs/icn_person.svg" alt="PersonLogo" class="person-Logo-info">
+                     </div>
+                     <div class="width-75">
+                        <h2 class="text-blue-color without-margin" id="Name"><a id="Age"></a></h2>
+                        <p id="Notes"></p>
+                     </div>
+                  </div>
+                  <!-- OTHER PERSONAL INFO -->
+                  <div class="container-persoal-info">
+                     <div class="box-persoal-info">
+                        <!-- ADDRESS -->
+                        <div class="">
+                           <h3 class="sub-title-h3">Address</h3>
+                           <p id="Address"></p>
                         </div>
-                        <div class="width-75">
-                            <h2 class="text-blue-color without-margin" id="Name"><a id="Age"></a></h2>
-                            <p id="Notes"></p>
+                        <!-- EMAIL -->
+                        <div class="">
+                           <h3 class="sub-title-h3">Email</h3>
+                           <ul>
+                              <li id="Email"></li>
+                           </ul>
                         </div>
-                    </div>
-                    <!-- OTHER PERSONAL INFO -->
-                    <div class="container-persoal-info">
-                        <div class="box-persoal-info">
-                            <!-- ADDRESS -->
-                            <div class="">
-                                <h3 class="sub-title-h3">Address</h3>
-                                <p id="Address"></p>
-                            </div>
-                            <!-- EMAIL -->
-                            <div class="">
-                                <h3 class="sub-title-h3">Email</h3>
-                                <ul>
-                                    <li id="Email"></li>
-                                </ul>
-                            </div>
+                     </div>
+                     <div class="box-persoal-info">
+                        <!-- PHONE NUMBERS -->
+                        <div class="">
+                           <h3 class="sub-title-h3">Phone Numbers</h3>
+                           <ul>
+                              <li id="Phones"></li>
+                           </ul>
                         </div>
-                        <div class="box-persoal-info">
-                            <!-- PHONE NUMBERS -->
-                            <div class="">
-                                <h3 class="sub-title-h3">Phone Numbers</h3>
-                                <ul>
-                                    <li id="Phones"></li>
-                                </ul>
-                            </div>
-                            <!-- RELATIVES -->
-                            <div class="">
-                                <h3 class="sub-title-h3">Relatives</h3>
-                                <ul>
-                                    <li id="Relatives"></li>
-                                </ul>
-                            </div>
+                        <!-- RELATIVES -->
+                        <div class="">
+                           <h3 class="sub-title-h3">Relatives</h3>
+                           <ul>
+                              <li id="Relatives"></li>
+                           </ul>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- body-result page -->
-
             <!-- ***************************************BODY RESULT PAGE***************************************************** -->
-        </div>
-
-        <!-- ***************************************BODY TRY AGAIN PAGE***************************************************** -->
-
-        <!-- BODY TRY AGAIN FORM -->
-        <div id="body-try-again" class="try-again">
-            <div class="content-center">
-                <h1 class="text-white-color title-text">Can’t Find The Right Person?</h1>
-                <div id="sub-title">
-                    <p class="text-white-color">
+            <!-- ***************************************BODY TRY AGAIN PAGE***************************************************** -->
+            <!-- BODY TRY AGAIN FORM -->
+            <div id="body-try-again" class="try-again">
+               <div class="content-center">
+                  <h1 class="text-white-color title-text">Can’t Find The Right Person?</h1>
+                  <div id="sub-title">
+                     <p class="text-white-color">
                         <a class="text-yellow-color bold-text">Try Again</a> - Make a new search
-                    </p>
-                </div>
-                <!-- FORM CONTAINER -->
-                <div class="">
-                    <!-- EMAIL ERRORS -->
-                    <div class="popup" onclick="myFunction()">
+                     </p>
+                  </div>
+                  <!-- FORM CONTAINER -->
+                  <div class="">
+                     <!-- EMAIL ERRORS -->
+                     <div class="popup">
                         <!-- EMAIL INPUT ERROR: DATA NOT FOUND -->
                         <span class="popuptext" id="popup-not-found-result">Email not found, please try again.</span>
                         <!-- EMAIL INPUT ERROR: INVALID EMAIL-->
                         <span class="popuptext" id="popup-invalid-email-result">Please add a valid email address.</span>
-                    </div>
-                    <div class="container-input">
+                     </div>
+                     <div class="container-input">
                         <!-- EMAIL INPUT -->
                         <input type="email" name="emial-result" id="email-result" placeholder="EMAIL" class="box-input">
                         <!-- GO button -->
                         <button class="gradient-yellow-color box-submit go-button" onclick="renderInfoResult()">GO!</button>
-                    </div>
-                    <div class="align-left-content">
+                     </div>
+                     <div class="align-left-content">
                         <img src="assets/SVGs/lock.svg" alt="LockLogo" class="lock-Logo">
                         <a class="text-yellow-color bold-text">Enter Any Email Address. They won't be notified.</a>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- BODY TRY AGAIN FORM -->
-
-        <!-- ***************************************BODY TRY AGAIN PAGE***************************************************** -->
-    </div>
-    <!-- FOOTER -->
-    <footer class="footer-container">
-        <div class="together content-center">
-            <p class="text-gray-color" id="text-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <!-- BODY TRY AGAIN FORM -->
+            <!-- ***************************************BODY TRY AGAIN PAGE***************************************************** -->
+         </section>
+      </div>
+      <!-- FOOTER -->
+      <footer class="footer-container">
+         <div class="together content-center">
+            <p class="text-gray-color" id="text-footer">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
             <p class="text-blue-color bold-text" id="text-footer-link">Terms | Privacy</p>
-        </div>
-    </footer>
-</body>
-
+         </div>
+      </footer>
+   </body>
 </html>
